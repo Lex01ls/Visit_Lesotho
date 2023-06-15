@@ -1,0 +1,13 @@
+On the header lies the Navigation Panel which contains Home, Explore, Map, Gallery and Profile.
+
+1. Press "Home" Button to go Home panel which a video will play automatically, you can also pause and play the video
+
+2. Press "Explore" Button to go to Explore Panel  which will show Places of and the Description with their prices,
+ you can also leave a comment, and it will be displayed on the Home Panel
+
+3. Press "Map" Button to go to the Map Panel where Places of interest location are marked
+
+4. Press "Gallery" Button to go to the Gallery Panel where you can see albums of Places of interest,
+ you can change the media by pressing "Previous" and "Next" Buttons
+
+
