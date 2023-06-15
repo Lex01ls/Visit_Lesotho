@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.visit_lesotho.Login">
+   <children>
+      <VBox alignment="CENTER" prefHeight="580.0" prefWidth="381.0" spacing="25.0" style="-fx-background-color: lightblue;" stylesheets="@../../../application.css" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="165.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icon_pic.png" />
+               </image>
+            </ImageView>
+            <Label text="Visit Lesotho" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="580.0" prefWidth="401.0" spacing="25.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Log In" />
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" text="Username" />
+            <TextField fx:id="txtUsername" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="350.0" />
+            <Label text="Password" />
+            <TextField maxHeight="-Infinity" maxWidth="-Infinity" onAction="#validation" prefHeight="31.0" prefWidth="355.0" />
+            <Button fx:id="btnLogIn" mnemonicParsing="false" onAction="#handleClicks" prefHeight="31.0" prefWidth="118.0" text="Log In" />
+            <Button fx:id="btnRegister" layoutX="150.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="31.0" prefWidth="118.0" text="Register" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

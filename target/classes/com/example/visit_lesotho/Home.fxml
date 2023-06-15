@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="1066.0" stylesheets="@../../../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.visit_lesotho.Home">
+   <center>
+      <StackPane prefHeight="480.0" prefWidth="1082.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="959.0" spacing="15.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <ScrollPane prefHeight="450.0" prefWidth="636.0" HBox.hgrow="NEVER">
+                     <content>
+                        <VBox alignment="CENTER" prefHeight="417.0" prefWidth="399.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="55.0" prefWidth="457.0" spacing="10.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <Label fx:id="lbl_profile_name" text="Label" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="366.0" prefWidth="399.0" spacing="10.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <Text fx:id="txtReview" strokeType="OUTSIDE" strokeWidth="100.0" text="Review" textAlignment="JUSTIFY" wrappingWidth="129.318359375" VBox.vgrow="NEVER" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <Pane prefHeight="451.0" prefWidth="59.0" />
+                  <StackPane prefHeight="462.0" prefWidth="484.0" HBox.hgrow="NEVER">
+                     <children>
+                        <MediaView fx:id="mediaView" fitHeight="380.0" fitWidth="520.0" />
+                        <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#handleClicks" prefHeight="58.0" prefWidth="129.0" text="Play" />
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </StackPane>
+   </center>
+</BorderPane>

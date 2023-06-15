@@ -1,0 +1,80 @@
+
+.root{
+     -fx-background-color: #F0F0F0;
+     -fx-background-image: url("afriski-ski-mountain.jpg");
+     -fx-background-size: cover;
+     -fx-background-repeat: no-repeat;
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color:  rgba(173, 216, 230, 0.5); /* Background color for the ScrollPane's viewport */
+        -fx-font-size: 17px;
+        -fx-font-family: 'Dancing Script', cursive;
+        -fx-font-family: 'Ubuntu Mono', monospace;
+        -fx-text-fill: white;
+}
+
+
+/* Button Styles */
+.button {
+    -fx-background-color: #0078D7;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #005EB8;
+    -fx-cursor: hand;
+    -fx-opacity: 100;
+}
+
+.button : pressed {
+    -fx-background-color: #004B91;
+}
+
+.button : disabled {
+    -fx-opacity: 0.5;
+}
+
+.button.default-button {
+    -fx-background-color: #4CAF50;
+}
+
+.button.default-button : hover {
+    -fx-background-color: #45A849;
+}
+
+.button.default-button:pressed {
+    -fx-background-color: #3D923F;
+}
+
+
+/* Label Styles */
+.label {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0a1e2a;
+
+}
+/* Text Styles */
+.text {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+#textInfo{
+    -fx-font-size: 20px;
+     -fx-font-weight: bold;
+}
+
+.gradient {
+    -fx-background-color: linear-gradient(to top, #7ebbcf, transparent, transparent);
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0,0.5),10, 0, 0, 10);
+}
